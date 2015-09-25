@@ -1,0 +1,21 @@
+<form novalidate ng-submit="updateBook()">
+    <h2 class="page-header">Edit Book</h2>{{ book }}
+    <div class="form-group">
+        <label for="name">Name</label>
+        <input type="text" class="form-control" id="name" name="name" ng-model="formData.name">
+    </div>
+    <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" class="form-control" id="author" ng-model="formData.author">
+    </div>
+    <div class="form-group">
+        <label for="isbn">ISBN</label>
+        <input type="text" class="form-control" id="isbn" ng-model="formData.isbn">
+    </div>
+    <div class="form-group">
+        <label for="price">Price</label>
+        <input type="text" class="form-control" id="price" ng-model="formData.price">
+    </div>
+    <button class="btn btn-primary" type="submit">Update Book</button>
+    <a class="btn btn-warning" href="#/books">Cancel</a>
+</form>
